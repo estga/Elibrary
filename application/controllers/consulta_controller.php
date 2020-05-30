@@ -20,7 +20,7 @@
 			$this->form_validation->set_message('required','<div class="alert alert-danger">El campo %s es obligatorio</div>');
 
 			if ($this->form_validation->run() == FALSE) { //Si no pasa la validacion de datos
-				//Muestra la página de registro con el título de error
+				// Muestra la página de registro con el título de error
 				redirect('default_controller');
 			}else{ //Pasa la validacion
 				$this->nueva_consulta();
