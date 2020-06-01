@@ -62,9 +62,9 @@
 
 			//Preparo los datos para guardar en la base, en caso de que pase la validacion
 			$data = array(
-				'nombre' => $this->input->post('nombre',true),
+				'nombre'   => $this->input->post('nombre',true),
 				'apellido' => $this->input->post('apellido',true),
-				'email' => $this->input->post('email',true),
+				'email'    => $this->input->post('email',true),
 				'username' => $this->input->post('username',true),
 				'password' => $this->input->post('password',true)
 			);
@@ -109,14 +109,14 @@
 				}
 
 				$dat = array(
-                    'usuario' =>$datos_usuario,
-					'id'=>$id,
-					'nombre'=>$nombre,
-					'apellido'=>$apellido,
-					'email'=>$email,
-					'perfil_id'=>$perfil_id,
-					'username'=>$username,
-					'password'=>$password
+                    'usuario'   => $datos_usuario,
+					'id'        => $id,
+					'nombre'    => $nombre,
+					'apellido'  => $apellido,
+					'email'     => $email,
+					'perfil_id' => $perfil_id,
+					'username'  => $username,
+					'password'  => $password
 				);
 			} else {
 				return FALSE;
@@ -163,13 +163,13 @@
 
 			//Preparo los datos para guardar en la base, en caso de que pase la validacion
 			$dat = array(
-				'id'=>$id,
-				'nombre'=>$this->input->post('nombre',true),
-				'apellido'=>$this->input->post('apellido',true),
-				'email'=>$this->input->post('email',true),
-				'perfil_id'=>$this->input->post('perfil_id',true),
-				'username'=>$this->input->post('username',true),
-				'password'=>($pass)
+				'id'        => $id,
+				'nombre'    => $this->input->post('nombre',true),
+				'apellido'  => $this->input->post('apellido',true),
+				'email'     => $this->input->post('email',true),
+				'perfil_id' => $this->input->post('perfil_id',true),
+				'username'  => $this->input->post('username',true),
+				'password'  => ($pass)
 			);
 
 			//Si no pasa la validacion de datos

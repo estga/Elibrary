@@ -37,7 +37,7 @@ class Welcome extends CI_Controller {
 		$this->load->view('partes/contenido/service-section');
 		$this->load->view('partes/contenido/program-section');
 		$this->load->view('partes/contenido/event-section');
-		$this->load->view('partes/contenido/why_choose-section');
+		$this->load->view('partes/contenido/why-choose-section');
 		$this->load->view('partes/contenido/contact-section');
 		$this->load->view('partes/foot/footer');
 	}
