@@ -5,7 +5,7 @@
         <img src="images/person_2.jpg" alt="Image" class="img-fluid w-25 mb-4 rounded-circle">
         <h3 class="mb-4">Mariana Corrales - Estudiante Universitaria</h3>
         <blockquote>
-            <p>&ldquo; Vengo siempre a la Biblioteca, es como un refugio para mi. A veces a estudiar o a veces a buscar información, pero siempre me voy complacida con la atención y el servicio que realmente es excelente  &rdquo;</p>
+            <p>&ldquo;Vengo siempre a la Biblioteca, es como un refugio para mí. A veces a estudiar o a veces a buscar información, pero siempre me voy complacida con la atención y el servicio que realmente es excelente&rdquo;</p>
         </blockquote>
     </div>
     </div>

@@ -6,7 +6,7 @@
 <div class="row justify-content-center align-items-center text-center">
 
     <div class="col-lg-6">
-        <h1 data-aos="fade-up" data-aos-delay="100">Dejanos tu consulta!</h1>
+        <h1 data-aos="fade-up" data-aos-delay="100">Déjanos tu consulta!</h1>
         <p data-aos="fade-up" data-aos-delay="200"><a href="#" class="text-white">6 comentarios</a></p>
     </div>
 
@@ -27,24 +27,100 @@
                     <p class="mb-4">
                         <strong class="text-black mr-3">Schedule: </strong> MWF 9:30 - 11:00
                     </p>
-                    <h5 class="text-black">¿Quiénes pueden usar la Biblioteca?</h5>
-                    <p>La Biblioteca ofrece servicios a la Comunidad de Corrientes, incluyendo: Magistrados, Funcionarios, Profesionales y público en general para el uso de su colección e instalaciones.</p>
-                    <h5 class="text-black">¿Puedo comer o beber en la Biblioteca?</h5>
-                    <p>No. Está prohibido consumir alimentos, bebidas ni mate en Biblioteca.</p>
-                    <h5 class="text-black">¿Debo apagar el teléfono al ingresar a la Biblioteca?</h5>
-                    <p>No es necesario apagar el teléfono, pero es imperativo poner en modo vibrador o silencio.</p>
-                    <h5 class="text-black">¿Puedo llevar mi computadora personal a la sala de lectura?</h5>
-                    <p>Si, observando las normas de conducta para la convivencia armoniosa dentro de la instalación.</p>
-                    <h5 class="text-black">¿Puedo fotocopiar los libros?</h5>
-                    <p>Está prohibido hacer anotaciones o señales en los libros, doblar las páginas o reproducirlos parcial o totalmente por medio de cualquier proceso reprográfico, especialmente por fotocopia, microfilm, offset o mimeógrafo. (Acdo. Nº 25/97, pto. 8°)</p>
-                    <h5 class="text-black">¿Cuánto material puedo sacar en préstamo?</h5>
-                    <p>Como Socio puede retirar un máximo de 2 (dos) libros, siempre que no se trate de ejemplares únicos.</p>
-                    <h5 class="text-black">¿Cuál es el plazo de préstamo de un libro?</h5>
-                    <p>El plazo maximo es de hasta 5 días habiles.</p>
-                    <h5 class="text-black">¿Puedo sacar material de la biblioteca para prestárselo a otra persona?</h5>
-                    <p>No. El préstamo es únicamente para el socio que firma, siendo único responsable de la obra solicitada.</p>
-                    <h5 class="text-black">¿Qué sucede si pierdo o se rompe algún material que tenga en préstamo?</h5>
-                    <p>Todo lector deberá devolver los libros que reciba en préstamo en el mismo estado en que los recibió. En caso de pérdida o deterior, está obligado a reponerlo.</p>
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">¿Quiénes pueden usar la Biblioteca?</button>
+                                </h2>
+                            </div>
+
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <div class="card-body">La Biblioteca ofrece servicios a la Comunidad de Corrientes, incluyendo: Magistrados, Funcionarios, Profesionales y Público en general para el uso de su colección e instalaciones.</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">¿Puedo comer o beber en la Biblioteca?</button>
+                                </h2>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                <div class="card-body">No. Está prohibido consumir alimentos, bebidas ni mate en Biblioteca.</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">¿Debo apagar el teléfono al ingresar a la Biblioteca?</button>
+                                </h2>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                <div class="card-body">No es necesario apagar el teléfono, pero es imperativo poner en modo vibrador o silencio.</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingFour">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">¿Puedo llevar mi computadora personal a la sala de lectura?</button>
+                                </h2>
+                            </div>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                                <div class="card-body">Si, observando las normas de conducta para la convivencia armoniosa dentro de la instalación.</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingFive">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">¿Puedo fotocopiar los libros?</button>
+                                </h2>
+                            </div>
+                            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                                <div class="card-body">Está prohibido hacer anotaciones o señales en los libros, doblar las páginas o reproducirlos parcial o totalmente por medio de cualquier proceso reprográfico, especialmente por fotocopia, microfilm, offset o mimeógrafo. (Acdo. Nº 25/97, pto. 8°)</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingSix">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">¿Cuánto material puedo sacar en préstamo?</button>
+                                </h2>
+                            </div>
+                            <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                                <div class="card-body">Como Socio puede retirar un máximo de 2 (dos) libros, siempre que no se trate de ejemplares únicos.</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingSeven">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">¿Cuál es el plazo de préstamo de un libro?</button>
+                                </h2>
+                            </div>
+                            <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
+                                <div class="card-body">El plazo máximo es de hasta 5 días hábiles.</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingEight">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">¿Puedo sacar material de la biblioteca para prestárselo a otra persona?</button>
+                                </h2>
+                            </div>
+                            <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordionExample">
+                                <div class="card-body">No. El préstamo es únicamente para el socio que firma, siendo único responsable de la obra solicitada.</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingNine">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">¿Qué sucede si pierdo o se rompe algún material que tenga en préstamo?</button>
+                                </h2>
+                            </div>
+                            <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordionExample">
+                                <div class="card-body">Todo lector deberá devolver los libros que reciba en préstamo en el mismo estado en que los recibió. En caso de pérdida o deterior, está obligado a reponerlo.</div>
+                            </div>
+                        </div>
+
+                    </div>
                     
                 </div>
 
@@ -141,7 +217,7 @@
                     <div class="mb-4 text-center">
                         <img src="<?php echo base_url(); ?>/images/bibliotecaria.jpg" alt="Image" class="w-25 rounded-circle mb-4">  
                         <h3 class="h5 text-black mb-4">Cristina Cáceres</h3>
-                        <p>Encargada de la seccion de consultas</p>
+                        <p>Encargada de la sección de consultas</p>
                     </div>
                 </div>
 

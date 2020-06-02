@@ -13,9 +13,9 @@
                     <h3>Links</h3>
                     <ul class="list-unstyled footer-links">
                         <li><a href="#home-section" class="nav-link">Home</a></li>
-              			<li><a href="#services-section" class="nav-link">Services</a></li>
-              			<li><a href="#programs-section" class="nav-link">Programs</a></li>
-              			<li><a href="#events-section" class="nav-link">Events</a></li>
+              			<li><a href="#services-section" class="nav-link">Servicios</a></li>
+              			<li><a href="#programs-section" class="nav-link">Programas</a></li>
+              			<li><a href="#events-section" class="nav-link">Eventos</a></li>
                     </ul>
                 </div>
 
