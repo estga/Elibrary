@@ -24,7 +24,6 @@ Funcionalidad del producto
 
 
 El Sistema permitirá:
-
 - Creación de nuevo usuario.
 - Inicio de sesión de usuarios.
 - Consulta de un libro.
@@ -71,5 +70,4 @@ Esta implementación brinda la posibilidad de escalar el sistema fácilmente a u
 Resources
 
 
-Report security issues to our `Security Panel <mailto:estiga_27@gmail.com>`\_
-thank you.
+Report security issues to our `Security Panel <mailto:estiga_27@gmail.com>`\_ thank you.
