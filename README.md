@@ -1,7 +1,9 @@
 # Que es Elibrary
 
 Elibrary es un sistema de gestion de prestamos de libros.
-Dicho proyecto es un desarrollo de software particular diseñado para cumplir con los requisitos para la carrera de LSI (Licensiatura en sistemas de informacion).
+
+Dicho proyecto es un desarrollo de software particular diseñado para cumplir con los requisitos de la carrera de LSI (Licensiatura en sistemas de informacion).
+
 Esta desarrollado utilizando el lenguaje PHP mediante el framework Codeigniter y utilizando el editor de texto Visual Studio Code.
 
 ---
@@ -66,7 +68,9 @@ El Sistema permitirá:
 
 
 La arquitectura elegida para este proyecto es Cliente-Servidor, con la característica de ser lo bastante liviano como para ser controlado por un protocolo de solicitud / respuesta utilizado para que los clientes tengan acceso a la gran variedad de libros disponibles.
-Otra característica por la cual elegimos Cliente/Servidor para este sistema, es el uso de su servicio remoto, el cual permite que los datos se encuentren encriptados brindando así una mayor seguridad al usuario
+
+Otra característica por la cual elegimos Cliente/Servidor para este sistema, es el uso de su servicio remoto, el cual permite que los datos se encuentren encriptados brindando así una mayor seguridad al usuario.
+
 Esta implementación brinda la posibilidad de escalar el sistema fácilmente a un mayor número de usuarios concurrentes a medida que el establecimiento se expande con el tiempo con otras sucursales.
 
 ---
