@@ -35,7 +35,6 @@ El Sistema permitirá:
 Requerimientos Funcionales
 
 
-- ID Nº Descripción del requerimiento.
 - RF-1 Para la utilización e identificación en el sistema, los usuarios tendrán un nombre de usuario y contraseña.
 - RF-2 El sistema debe permitir la creación de una cuenta de usuario con nombre de usuario y contraseña.
 - RF-3 El sistema debe permitir la modificación de una cuenta de usuario.
@@ -49,7 +48,6 @@ Requerimientos Funcionales
 Requerimientos No Funcionales
 
 
-- ID Nº Descripción del requerimiento
 - RNF-1 El sistema debe responder en un tiempo inferior a 2 segundos.
 - RNF-2 Deben poder realizar requisitos a la base de datos de forma recurrente.
 - RNF-3 Los datos personales de los socios deben estar almacenados y protegidos dentro de nuestra base de datos.
