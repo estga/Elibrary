@@ -1,6 +1,4 @@
-###############
 #Que es Elibrary
-###############
 
 Elibrary es un sistema de gestion de prestamos de libros.
 Dicho proyecto es un desarrollo de software particular diseñado para cumplir con los requisitos para la carrera de LSI (Licensiatura en sistemas de informacion).
@@ -37,29 +35,29 @@ El Sistema permitirá:
 Requerimientos Funcionales
 
 
-ID Nº Descripción del requerimiento.
-RF-1 Para la utilización e identificación en el sistema, los usuarios tendrán un nombre de usuario y contraseña.
-RF-2 El sistema debe permitir la creación de una cuenta de usuario con nombre de usuario y contraseña.
-RF-3 El sistema debe permitir la modificación de una cuenta de usuario.
-RF-4 El sistema debe permitir dar de baja una cuenta de usuario.
-RF-5 El sistema debe permitir la consulta del libro solicitado.
-RF-6 El sistema debe registrar el préstamo del libro.
-RF-7 El sistema debe permitir consultar el estado del préstamo.
+- ID Nº Descripción del requerimiento.
+- RF-1 Para la utilización e identificación en el sistema, los usuarios tendrán un nombre de usuario y contraseña.
+- RF-2 El sistema debe permitir la creación de una cuenta de usuario con nombre de usuario y contraseña.
+- RF-3 El sistema debe permitir la modificación de una cuenta de usuario.
+- RF-4 El sistema debe permitir dar de baja una cuenta de usuario.
+- RF-5 El sistema debe permitir la consulta del libro solicitado.
+- RF-6 El sistema debe registrar el préstamo del libro.
+- RF-7 El sistema debe permitir consultar el estado del préstamo.
 
 ---
 
 Requerimientos No Funcionales
 
 
-ID Nº Descripción del requerimiento
-RNF-1 El sistema debe responder en un tiempo inferior a 2 segundos.
-RNF-2 Deben poder realizar requisitos a la base de datos de forma recurrente.
-RNF-3 Los datos personales de los socios deben estar almacenados y protegidos dentro de nuestra base de datos.
-RNF-4 Ante un eventual corte de energía eléctrica, el sistema debe ser capaz de evitar pérdida de información.
-RNF-5 El sistema dispondrá de una interfaz intuitiva, sencilla y de fácil uso.
-RNF-6 El sistema debe estar disponible en cualquier momento que el usuario necesite acceder a él.
-RNF-7 El sistema tendrá una documentación de fácil entendimiento. Que facilitará las futuras mejoras al sistemas.
-RNF-8 El sistema se implementará bajo plataforma de Windows 7 o superior.
+- ID Nº Descripción del requerimiento
+- RNF-1 El sistema debe responder en un tiempo inferior a 2 segundos.
+- RNF-2 Deben poder realizar requisitos a la base de datos de forma recurrente.
+- RNF-3 Los datos personales de los socios deben estar almacenados y protegidos dentro de nuestra base de datos.
+- RNF-4 Ante un eventual corte de energía eléctrica, el sistema debe ser capaz de evitar pérdida de información.
+- RNF-5 El sistema dispondrá de una interfaz intuitiva, sencilla y de fácil uso.
+- RNF-6 El sistema debe estar disponible en cualquier momento que el usuario necesite acceder a él.
+- RNF-7 El sistema tendrá una documentación de fácil entendimiento. Que facilitará las futuras mejoras al sistemas.
+- RNF-8 El sistema se implementará bajo plataforma de Windows 7 o superior.
 
 ---
 
