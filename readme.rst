@@ -25,7 +25,7 @@ Funcionalidad del producto
 El Sistema permitirá:
 -  Creación de nuevo usuario._
 -  Inicio de sesión de usuarios._
--  `Consulta de un libro.`_
+-  Consulta de un libro._
 -  Administrar el préstamo de libros._
 
 **************************
