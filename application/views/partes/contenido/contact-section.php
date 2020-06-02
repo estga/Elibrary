@@ -2,8 +2,8 @@
 <div class="container">
 <div class="row justify-content-center">
 <div class="col-md-7">
-    <h2 class="section-title mb-3">Message Us</h2>
-    <p class="mb-5">Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
+    <h2 class="section-title mb-3">¿Como te podemos ayudar?</h2>
+    <p class="mb-5">¿Tiene alguna pregunta o desea dejar algún comentario?</p>
 
 	<?php echo validation_errors(); ?>
     <div data-aos="fade" role="form">
@@ -14,16 +14,18 @@
 					<?php echo form_input (['name' => "nombre",
 											'id' => "nombre",
 											'type' => "text",
-											'class' => "form-control",
-											'placeholder' => "First name",
+                                            'class' => "form-control",
+                                            'required'=>'required',
+											'placeholder' => "Nombre",
 											'value' => set_value('nombre')]); ?>
         	    </div>
         	    <div class="col-md-6">
 					<?php echo form_input (['name' => "apellido",
 											'id' => "apellido",
 											'type' => "text",
-											'class' => "form-control",
-											'placeholder' => "Last name",
+                                            'class' => "form-control",
+                                            'required'=>'required',
+											'placeholder' => "Apellido",
 											'value' => set_value('apellido')]); ?>
         	    </div>
         	</div>
@@ -47,7 +49,7 @@
 											'type' => "text",
 											'class' => "form-control",
 											'required'=>'required',
-											'placeholder' => "Subjet",
+											'placeholder' => "Tema",
 											'value' => set_value('tema')]); ?>
         	    </div>
         	</div>
@@ -57,16 +59,20 @@
 					<?php echo form_input (['name' => "consulta",
 											'id' => "consulta",
 											'type' => "text",
-											'class' => "form-control",
+                                            'class' => "form-control",
+                                            'rows' => '3',
 											'required'=>'required',
-											'placeholder' => "Write your message here.",
+											'placeholder' => "Escriba su mensaje aquí.",
 											'value' => set_value('consulta')]); ?>
         	    </div>
         	</div>
 
+            <!-- Success message -->
+            <!-- <div class="alert alert-success" role="alert" id="success_message">¡Listo!<i class="glyphicon glyphicon-thumbs-up"></i> Tu mensaje fue enviado, en breve nos pondremos en contacto contigo.</div> -->
+
         	<div class="form-group row">
         	    <div class="col-md-6">
-					<?php echo form_submit ('submit', 'Send Message',"class='btn btn-primary btn-block'"); ?>
+					<?php echo form_submit ('submit', 'Enviar Mensaje',"class='btn btn-primary btn-block'"); ?>
         	    </div>
         	</div>
 			<?php echo form_close();?>

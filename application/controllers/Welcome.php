@@ -18,15 +18,11 @@ class Welcome extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
-	// public function index()
-	// {
-	// 	$data['titulo']='Principal';
-	// 	$this->load->view('partes/head/header');
-	// 	$this->load->view('partes/nav/navbar',$data);
-	// 	$this->load->view('front/principal');
-	// 	$this->load->view('partes/foot/footer');
-	// }
 
+    public function _construct() {
+		parent::_construct();
+    }
+    
 	public function index()
 	{
 		$data['titulo']='Home';
@@ -38,7 +34,18 @@ class Welcome extends CI_Controller {
 		$this->load->view('partes/contenido/program-section');
 		$this->load->view('partes/contenido/event-section');
 		$this->load->view('partes/contenido/why-choose-section');
-		$this->load->view('partes/contenido/contact-section');
 		$this->load->view('partes/foot/footer');
-	}
+    }
+    
+    public function consultas()
+	{
+		$data['titulo']='Consultas';
+
+		$this->load->view('partes/head/header', $data);
+		$this->load->view('partes/nav/navbar-consulta');
+		$this->load->view('partes/contenido/contact-view');
+		$this->load->view('partes/contenido/contact-section');
+		$this->load->view('partes/foot/footer-consulta');
+    }
+
 }

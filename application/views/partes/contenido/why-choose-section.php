@@ -3,9 +3,9 @@
     <div class="row justify-content-center align-items-center">
     <div class="col-md-8 text-center testimony" data-aos="fade-up" data-aos-delay="500">
         <img src="images/person_2.jpg" alt="Image" class="img-fluid w-25 mb-4 rounded-circle">
-        <h3 class="mb-4">Emma Stone</h3>
+        <h3 class="mb-4">Mariana Corrales - Estudiante Universitaria</h3>
         <blockquote>
-            <p>&ldquo; Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum rem soluta sit eius necessitatibus voluptate excepturi beatae ad eveniet sapiente impedit quae modi quo provident odit molestias! Rem reprehenderit assumenda &rdquo;</p>
+            <p>&ldquo; Vengo siempre a la Biblioteca, es como un refugio para mi. A veces a estudiar o a veces a buscar información, pero siempre me voy complacida con la atención y el servicio que realmente es excelente  &rdquo;</p>
         </blockquote>
     </div>
     </div>
@@ -27,7 +27,7 @@
 
         <div class="row mb-5 justify-content-center" data-aos="fade-up" data-aos-delay="">
         <div class="col-lg-7 text-center">
-            <h2 class="section-title">Why Choose Us</h2>
+            <h2 class="section-title">Por qué Elegirnos</h2>
         </div>
         </div>
             
@@ -38,22 +38,22 @@
 
                 <div class="d-flex align-items-center custom-icon-wrap custom-icon-light mb-3">
                     <div class="mr-3"><span class="custom-icon-inner"><span class="icon icon-graduation-cap"></span></span></div>
-                    <div><h3 class="m-0">22,931 Yearly Students</h3></div>
+                    <div><h3 class="m-0">22,931 Estudiantes al Año</h3></div>
                 </div>
 
                 <div class="d-flex align-items-center custom-icon-wrap custom-icon-light mb-3">
                     <div class="mr-3"><span class="custom-icon-inner"><span class="icon icon-university"></span></span></div>
-                    <div><h3 class="m-0">50 Colaborating Universities</h3></div>
+                    <div><h3 class="m-0">50 Universidades Colaboradoras</h3></div>
                 </div>
 
                 <div class="d-flex align-items-center custom-icon-wrap custom-icon-light mb-3">
                     <div class="mr-3"><span class="custom-icon-inner"><span class="icon icon-book"></span></span></div>
-                    <div><h3 class="m-0">Top Books For All The World</h3></div>
+                    <div><h3 class="m-0">Los mejores libros para todo el mundo</h3></div>
                 </div>
 
                 <div class="d-flex align-items-center custom-icon-wrap custom-icon-light mb-3">
                     <div class="mr-3"><span class="custom-icon-inner"><span class="icon icon-trophy"></span></span></div>
-                    <div><h3 class="m-0">Expand Your Knowledge</h3></div>
+                    <div><h3 class="m-0">Amplíe su conocimiento</h3></div>
                 </div>
 
             </div>

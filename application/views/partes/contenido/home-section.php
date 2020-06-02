@@ -6,8 +6,8 @@
 <div class="row align-items-center">
 
     <div class="mb-4">
-        <h1 data-aos="fade-up" data-aos-delay="100">Objective</h1>
-        <p class="mb-4" data-aos="fade-up" data-aos-delay="200">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni eum odio consectetur distinctio molestias, facilis minus ipsum ut architecto minima quibusdam! Minima praesentium quidem soluta expedita eligendi natus fugit autem similique! Debitis voluptatum eligendi, quas tempore consequatur voluptatem ad ratione, illum architecto culpa ut! Sit, nesciunt beatae. Ullam, possimus reprehenderit.</p>
+        <h1 data-aos="fade-up" data-aos-delay="100">Que te ofrecemos?</h1>
+        <p class="mb-4" data-aos="fade-up" data-aos-delay="200">Un servicio de información profesional basado en prácticas y normas bibliotecológicas. Un equipo dedicado a encontrar y brindar la mejor solución de información para vos. Nos esforzamos para que, si sos estudiante, profesional, empleado o investigador, nuestro servicio cubra rápidamente tus expectativas.</p>
 		<!-- Button trigger modal -->
 		<p data-aos="fade-up" data-aos-delay="300"><a href="#" class="btn btn-primary py-3 px-5 btn-pill" data-toggle="modal" data-target="#signup">Be Part Now</a></p>
     </div>
