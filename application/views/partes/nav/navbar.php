@@ -16,7 +16,7 @@
 			<div class="mx-auto text-center">
           		<nav class="site-navigation position-relative text-right" role="navigation">
             		<ul class="site-menu main-menu js-clone-nav mx-auto d-none d-lg-block  m-0 p-0">
-              			<li><a href="#home-section" class="icon-home"></a></li>
+              			<li><a href="#home-section" class="nav-link">Home</a></li>
               			<li><a href="#services-section" class="nav-link">Servicios</a></li>
               			<li><a href="#programs-section" class="nav-link">Programas</a></li>
               			<li><a href="#events-section" class="nav-link">Eventos</a></li>
