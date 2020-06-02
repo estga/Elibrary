@@ -10,7 +10,6 @@ Esta desarrollado utilizando el lenguaje PHP mediante el framework Codeigniter y
 
 Objetivos
 
----
 
 Nuestro objetivo es desarrollar un sistema de gestión de biblioteca para agilizar el alquiler de libros, la disponibilidad de inventarios y demás consultas del establecimiento, además de permitir la creación de cuentas de usuario.
 
@@ -18,7 +17,6 @@ Nuestro objetivo es desarrollar un sistema de gestión de biblioteca para agiliz
 
 Metodología
 
----
 
 Para este proyecto elegimos la metodología de Programación Extrema (XP), ya que optimiza los tiempos y se adapta al desarrollo de este sistema sin mayor documentación, el código es claro y simple.
 
@@ -26,7 +24,6 @@ Para este proyecto elegimos la metodología de Programación Extrema (XP), ya qu
 
 Funcionalidad del producto
 
----
 
 El Sistema permitirá:
 
@@ -39,7 +36,6 @@ El Sistema permitirá:
 
 Requerimientos Funcionales
 
----
 
 ID Nº Descripción del requerimiento.
 RF-1 Para la utilización e identificación en el sistema, los usuarios tendrán un nombre de usuario y contraseña.
@@ -54,7 +50,6 @@ RF-7 El sistema debe permitir consultar el estado del préstamo.
 
 Requerimientos No Funcionales
 
----
 
 ID Nº Descripción del requerimiento
 RNF-1 El sistema debe responder en un tiempo inferior a 2 segundos.
@@ -70,7 +65,6 @@ RNF-8 El sistema se implementará bajo plataforma de Windows 7 o superior.
 
 Selección de Arquitectura
 
----
 
 La arquitectura elegida para este proyecto es Cliente-Servidor, con la característica de ser lo bastante liviano como para ser controlado por un protocolo de solicitud / respuesta utilizado para que los clientes tengan acceso a la gran variedad de libros disponibles.
 Otra característica por la cual elegimos Cliente/Servidor para este sistema, es el uso de su servicio remoto, el cual permite que los datos se encuentren encriptados brindando así una mayor seguridad al usuario
@@ -80,7 +74,6 @@ Esta implementación brinda la posibilidad de escalar el sistema fácilmente a u
 
 Resources
 
----
 
 Report security issues to our `Security Panel <mailto:estiga_27@gmail.com>`\_
 thank you.
