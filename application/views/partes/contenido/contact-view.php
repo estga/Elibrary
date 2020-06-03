@@ -7,7 +7,7 @@
 
     <div class="col-lg-6">
         <h1 data-aos="fade-up" data-aos-delay="100">Déjanos tu consulta!</h1>
-        <p data-aos="fade-up" data-aos-delay="200"><a href="#" class="text-white">6 comentarios</a></p>
+        <p data-aos="fade-up" data-aos-delay="200"><a href="#CommentSeccion" class="text-white">6 comentarios</a></p>
     </div>
 
 </div>
@@ -124,89 +124,26 @@
                     
                 </div>
 
-                <div class="pt-5">
+                <div class="pt-5" id="CommentSeccion">
+                    <br>
                     <h3 class="mb-5">6 Comentarios</h3>
                     <ul class="comment-list">
+
+                        <?php foreach($consultas as $fila) { ?>
                         <li class="comment">
                             <div class="vcard bio">
-                                <img src="<?php echo base_url(); ?>/images/person_1.jpg" alt="Image placeholder">
+                                <img src="<?php echo base_url(); ?>/images/unnamed.png" alt="Image placeholder">
                             </div>
                             <div class="comment-body">
-                                <h3>Jean Doe</h3>
-                                <div class="meta">January 9, 2018 at 2:21pm</div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quidem laborum necessitatibus, ipsam impedit vitae autem, eum officia, fugiat saepe enim sapiente iste iure! Quam voluptas earum impedit necessitatibus, nihil?</p>
-                                <p><a href="#" class="reply">Reply</a></p>
+                                <h3><?php echo $fila->nombre; ?> <?php echo $fila->apellido; ?></h3>
+                                <div class="meta"><?php echo date("d/m/Y", strtotime($fila->fecha)); ?></div>
+                                <h5><?php echo $fila->tema; ?></h5>
+                                <p><?php echo $fila->consulta; ?></p>
                             </div>
                         </li>
+                        <?php } ?>
 
-                        <li class="comment">
-                            <div class="vcard bio">
-                                <img src="<?php echo base_url(); ?>/images/person_1.jpg" alt="Image placeholder">
-                            </div>
-                            <div class="comment-body">
-                                <h3>Jean Doe</h3>
-                                <div class="meta">January 9, 2018 at 2:21pm</div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quidem laborum necessitatibus, ipsam impedit vitae autem, eum officia, fugiat saepe enim sapiente iste iure! Quam voluptas earum impedit necessitatibus, nihil?</p>
-                                <p><a href="#" class="reply">Reply</a></p>
-                            </div>
-
-                            <ul class="children">
-                                <li class="comment">
-                                    <div class="vcard bio">
-                                        <img src="<?php echo base_url(); ?>/images/person_1.jpg" alt="Image placeholder">
-                                    </div>
-                                    <div class="comment-body">
-                                        <h3>Jean Doe</h3>
-                                        <div class="meta">January 9, 2018 at 2:21pm</div>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quidem laborum necessitatibus, ipsam impedit vitae autem, eum officia, fugiat saepe enim sapiente iste iure! Quam voluptas earum impedit necessitatibus, nihil?</p>
-                                        <p><a href="#" class="reply">Reply</a></p>
-                                    </div>
-
-
-                                    <ul class="children">
-                                        <li class="comment">
-                                            <div class="vcard bio">
-                                                <img src="<?php echo base_url(); ?>/images/person_1.jpg" alt="Image placeholder">
-                                            </div>
-                                            <div class="comment-body">
-                                                <h3>Jean Doe</h3>
-                                                <div class="meta">January 9, 2018 at 2:21pm</div>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quidem laborum necessitatibus, ipsam impedit vitae autem, eum officia, fugiat saepe enim sapiente iste iure! Quam voluptas earum impedit necessitatibus, nihil?</p>
-                                                <p><a href="#" class="reply">Reply</a></p>
-                                            </div>
-
-                                            <ul class="children">
-                                                <li class="comment">
-                                                    <div class="vcard bio">
-                                                        <img src="<?php echo base_url(); ?>/images/person_1.jpg" alt="Image placeholder">
-                                                    </div>
-                                                    <div class="comment-body">
-                                                        <h3>Jean Doe</h3>
-                                                        <div class="meta">January 9, 2018 at 2:21pm</div>
-                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quidem laborum necessitatibus, ipsam impedit vitae autem, eum officia, fugiat saepe enim sapiente iste iure! Quam voluptas earum impedit necessitatibus, nihil?</p>
-                                                        <p><a href="#" class="reply">Reply</a></p>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="comment">
-                            <div class="vcard bio">
-                                <img src="<?php echo base_url(); ?>/images/person_1.jpg" alt="Image placeholder">
-                            </div>
-                            <div class="comment-body">
-                                <h3>Jean Doe</h3>
-                                <div class="meta">January 9, 2018 at 2:21pm</div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quidem laborum necessitatibus, ipsam impedit vitae autem, eum officia, fugiat saepe enim sapiente iste iure! Quam voluptas earum impedit necessitatibus, nihil?</p>
-                                <p><a href="#" class="reply">Reply</a></p>
-                            </div>
-                        </li>
                     </ul>
-                    <!-- END comment-list -->
               
                 </div>
 

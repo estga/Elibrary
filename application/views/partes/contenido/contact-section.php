@@ -67,9 +67,6 @@
         	    </div>
         	</div>
 
-            <!-- Success message -->
-            <!-- <div class="alert alert-success" role="alert" id="success_message">¡Listo!<i class="glyphicon glyphicon-thumbs-up"></i> Tu mensaje fue enviado, en breve nos pondremos en contacto contigo.</div> -->
-
         	<div class="form-group row">
         	    <div class="col-md-6">
 					<?php echo form_submit ('submit', 'Enviar Mensaje',"class='btn btn-primary btn-block'"); ?>
@@ -83,3 +80,10 @@
 </div>
 </div>
 </div>
+
+<!-- Success message 
+<script>
+function submitt(){
+    alert("Tu mensaje fue enviado, en breve nos pondremos en contacto contigo.");
+}
+</script> -->

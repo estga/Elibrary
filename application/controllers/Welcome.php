@@ -39,12 +39,15 @@ class Welcome extends CI_Controller {
     
     public function consultas()
 	{
+        $this->load->model('consulta_model');
+        $data['consultas'] = $this->consulta_model->get_consultas();
+        
 		$data['titulo']='Consultas';
 
 		$this->load->view('partes/head/header', $data);
 		$this->load->view('partes/nav/navbar-consulta');
 		$this->load->view('partes/contenido/contact-view');
-		$this->load->view('partes/contenido/contact-section');
+		$this->load->view('partes/contenido/contact-section', $data);
 		$this->load->view('partes/foot/footer-consulta');
     }
 

@@ -9,8 +9,6 @@ class Consulta_model extends CI_Model
 	function add_consulta($data)
 	{
 		$this->db->insert('consultas', $data);
-		$insert_id = $this->db->insert_id();
-		return $insert_id;
 	}
 
 	public function get_consultas()

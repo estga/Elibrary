@@ -21,17 +21,8 @@
 
 			if ($this->form_validation->run() == FALSE) { //Si no pasa la validacion de datos
 				// Muestra la página de registro con el título de error
-				$data['titulo']='Home';
-				$this->load->view('partes/head/header', $data);
-				$this->load->view('partes/nav/navbar');
-				$this->load->view('partes/contenido/home-section');
-				$this->load->view('partes/contenido/service-section');
-				$this->load->view('partes/contenido/program-section');
-				$this->load->view('partes/contenido/event-section');
-				$this->load->view('partes/contenido/why-choose-section');
-				$this->load->view('partes/contenido/contact-section');
-				$this->load->view('partes/contenido/fracaso-consulta-modal');
-				$this->load->view('partes/foot/footer');
+				$data['titulo']='Fallo Verificacion';
+				redirect ('welcome/consultas');
 			}else{ //Pasa la validacion
 				$this->nueva_consulta();
 			}
@@ -47,23 +38,16 @@
 						  'apellido' => $this->input->post('apellido',true),
 						  'correo'   => $this->input->post('correo',true),
 						  'tema'     => $this->input->post('tema',true),
-						  'consulta' => $this->input->post('consulta',true));
+                          'consulta' => $this->input->post('consulta',true),
+                          'fecha'    => date( "Y-m-d"));
 
 			//Envío array al método insert para registro de datos
 			$consulta = $this->consulta_model->add_consulta($data);
 			
 			//Redirecciono a la pagina de principal
-			$data['titulo']='exito consulta';
+			$data['titulo']='Exito Consulta';
 
-			$this->load->view('partes/head/header', $data);
-			$this->load->view('partes/nav/navbar');
-			$this->load->view('partes/contenido/home-section');
-			$this->load->view('partes/contenido/service-section');
-			$this->load->view('partes/contenido/program-section');
-			$this->load->view('partes/contenido/event-section');
-			$this->load->view('partes/contenido/why-choose-section');
-			$this->load->view('partes/contenido/contact-section');
-			$this->load->view('partes/foot/footer');
+			redirect ('welcome/consultas');
 		}
 
 		public function listar_consultas()
@@ -73,14 +57,10 @@
 		    $data['title'] = 'Listado de Consultas';
 
 			$this->load->view('partes/head/header', $data);
-			$this->load->view('partes/nav/navbar');
-			$this->load->view('partes/contenido/home-section');
-			$this->load->view('partes/contenido/service-section');
-			$this->load->view('partes/contenido/program-section');
-			$this->load->view('partes/contenido/event-section');
-			$this->load->view('partes/contenido/why-choose-section');
-			$this->load->view('partes/contenido/contact-section');
-			$this->load->view('partes/foot/footer');
+		    $this->load->view('partes/nav/navbar-consulta');
+		    $this->load->view('partes/contenido/contact-view', $data);
+		    $this->load->view('partes/contenido/contact-section');
+		    $this->load->view('partes/foot/footer-consulta');
 		}
 
 	}
