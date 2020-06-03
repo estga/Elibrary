@@ -7,6 +7,7 @@
 
     <div class="col-lg-6">
         <h1 data-aos="fade-up" data-aos-delay="100">Déjanos tu consulta!</h1>
+        <!-- Buscar la forma de mostrar numero de comentarios realizado -->
         <p data-aos="fade-up" data-aos-delay="200"><a href="#CommentSeccion" class="text-white">6 comentarios</a></p>
     </div>
 
