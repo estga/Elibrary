@@ -2,10 +2,10 @@
 -- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost
--- Generation Time: May 29, 2020 at 05:05 AM
--- Server version: 10.4.11-MariaDB
--- PHP Version: 7.4.5
+-- Servidor: 127.0.0.1
+-- Tiempo de generación: 04-06-2020 a las 02:44:10
+-- Versión del servidor: 10.4.11-MariaDB
+-- Versión de PHP: 7.4.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `elibrary`
+-- Base de datos: `elibrary`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `consultas`
+-- Estructura de tabla para la tabla `consultas`
 --
 
 CREATE TABLE `consultas` (
@@ -33,13 +33,27 @@ CREATE TABLE `consultas` (
   `apellido` varchar(15) NOT NULL,
   `correo` varchar(15) NOT NULL,
   `tema` varchar(15) NOT NULL,
-  `consulta` varchar(150) NOT NULL
+  `consulta` varchar(150) NOT NULL,
+  `fecha` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `consultas`
+--
+
+INSERT INTO `consultas` (`id_consulta`, `nombre`, `apellido`, `correo`, `tema`, `consulta`, `fecha`) VALUES
+(14, 'Jose', 'Romero', 'asda@asd.com', 'Catalogo', 'Para cuando el catalogo?', '0000-00-00'),
+(15, 'Esteban', 'Romero', 'asda@asd.com', 'Prestamo', 'Cuando se habilitan los prestamos remotos?', '0000-00-00'),
+(16, 'Jesica', 'Bordone', 'adsf@asd.asd', 'Registro', 'El formulario de registro no funciona!', '0000-00-00'),
+(17, 'Veronica', 'Ribas', 'asda@asd.com', 'Consulta', 'No se ven las consultas!', '0000-00-00'),
+(18, 'Cecilia', 'Perez', 'adsf@asd.asd', 'Telefono', 'Tienen numero de contacto?', '0000-00-00'),
+(19, 'Vanesa', 'Caceres', 'adsf@asd.asd', 'Catalogo', 'Donde se entra para ver el catalogo?', '0000-00-00'),
+(20, 'Pablo', 'Garcia', 'adsf@asd.asd', 'Prestamos', 'Cuando se habilitan los prestamos remotos? Tenes que hacer la presentacion!', '2020-06-04');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `detalles_prestamo`
+-- Estructura de tabla para la tabla `detalles_prestamo`
 --
 
 CREATE TABLE `detalles_prestamo` (
@@ -52,7 +66,7 @@ CREATE TABLE `detalles_prestamo` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `libros`
+-- Estructura de tabla para la tabla `libros`
 --
 
 CREATE TABLE `libros` (
@@ -64,10 +78,17 @@ CREATE TABLE `libros` (
   `stock` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Volcado de datos para la tabla `libros`
+--
+
+INSERT INTO `libros` (`id_libro`, `titulo`, `autor`, `editorial`, `genero`, `stock`) VALUES
+(1, 'asdfg', 'sdfgh', 'adsfgh', 'sadfg', 4);
+
 -- --------------------------------------------------------
 
 --
--- Table structure for table `prestamos`
+-- Estructura de tabla para la tabla `prestamos`
 --
 
 CREATE TABLE `prestamos` (
@@ -79,7 +100,7 @@ CREATE TABLE `prestamos` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `usuarios`
+-- Estructura de tabla para la tabla `usuarios`
 --
 
 CREATE TABLE `usuarios` (
@@ -94,17 +115,17 @@ CREATE TABLE `usuarios` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Indexes for dumped tables
+-- Índices para tablas volcadas
 --
 
 --
--- Indexes for table `consultas`
+-- Indices de la tabla `consultas`
 --
 ALTER TABLE `consultas`
   ADD PRIMARY KEY (`id_consulta`);
 
 --
--- Indexes for table `detalles_prestamo`
+-- Indices de la tabla `detalles_prestamo`
 --
 ALTER TABLE `detalles_prestamo`
   ADD PRIMARY KEY (`id_detalle`),
@@ -112,71 +133,71 @@ ALTER TABLE `detalles_prestamo`
   ADD KEY `id_libro` (`id_libro`);
 
 --
--- Indexes for table `libros`
+-- Indices de la tabla `libros`
 --
 ALTER TABLE `libros`
   ADD PRIMARY KEY (`id_libro`);
 
 --
--- Indexes for table `prestamos`
+-- Indices de la tabla `prestamos`
 --
 ALTER TABLE `prestamos`
   ADD PRIMARY KEY (`id_prestamo`),
   ADD KEY `id_usuario` (`id_usuario`);
 
 --
--- Indexes for table `usuarios`
+-- Indices de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
   ADD PRIMARY KEY (`id_usuario`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT de las tablas volcadas
 --
 
 --
--- AUTO_INCREMENT for table `consultas`
+-- AUTO_INCREMENT de la tabla `consultas`
 --
 ALTER TABLE `consultas`
-  MODIFY `id_consulta` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_consulta` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
--- AUTO_INCREMENT for table `detalles_prestamo`
+-- AUTO_INCREMENT de la tabla `detalles_prestamo`
 --
 ALTER TABLE `detalles_prestamo`
   MODIFY `id_detalle` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `libros`
+-- AUTO_INCREMENT de la tabla `libros`
 --
 ALTER TABLE `libros`
-  MODIFY `id_libro` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_libro` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `prestamos`
+-- AUTO_INCREMENT de la tabla `prestamos`
 --
 ALTER TABLE `prestamos`
   MODIFY `id_prestamo` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `usuarios`
+-- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
   MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- Constraints for dumped tables
+-- Restricciones para tablas volcadas
 --
 
 --
--- Constraints for table `detalles_prestamo`
+-- Filtros para la tabla `detalles_prestamo`
 --
 ALTER TABLE `detalles_prestamo`
   ADD CONSTRAINT `detalles_prestamo_ibfk_1` FOREIGN KEY (`id_prestamo`) REFERENCES `prestamos` (`id_prestamo`) ON DELETE CASCADE,
   ADD CONSTRAINT `detalles_prestamo_ibfk_2` FOREIGN KEY (`id_libro`) REFERENCES `libros` (`id_libro`) ON DELETE CASCADE;
 
 --
--- Constraints for table `prestamos`
+-- Filtros para la tabla `prestamos`
 --
 ALTER TABLE `prestamos`
   ADD CONSTRAINT `prestamos_ibfk_1` FOREIGN KEY (`id_usuario`) REFERENCES `usuarios` (`id_usuario`) ON DELETE CASCADE;

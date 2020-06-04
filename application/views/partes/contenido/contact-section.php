@@ -7,7 +7,7 @@
 
 	<?php echo validation_errors(); ?>
     <div data-aos="fade" role="form">
-		<?php echo form_open ('verificacion', ['class' => 'form-group', 'role' => 'form', 'id' => 'form_registro']); ?>
+		<?php echo form_open ('consulta_controller/valido_consulta', ['class' => 'form-group', 'role' => 'form', 'id' => 'form_registro']); ?>
 		<fieldset>
 			<div class="form-group row">
         	    <div class="col-md-6 mb-3 mb-lg-0">

@@ -53,7 +53,6 @@
 		public function listar_consultas()
 		{
     		$data['consultas'] = $this->consulta_model->get_consultas();
-
 		    $data['title'] = 'Listado de Consultas';
 
 			$this->load->view('partes/head/header', $data);
