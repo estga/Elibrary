@@ -5,9 +5,8 @@
     <h2 class="section-title mb-3">¿Como te podemos ayudar?</h2>
     <p class="mb-5">¿Tiene alguna pregunta o desea dejar algún comentario?</p>
 
-	<?php echo validation_errors(); ?>
     <div data-aos="fade" role="form">
-		<?php echo form_open ('consulta_controller/valido_consulta', ['class' => 'form-group', 'role' => 'form', 'id' => 'form_registro']); ?>
+		<?php echo form_open ('consulta_controller/valido_consulta', ['class' => 'form-group', 'role' => 'form']); ?>
 		<fieldset>
 			<div class="form-group row">
         	    <div class="col-md-6 mb-3 mb-lg-0">
@@ -18,7 +17,9 @@
                                             'required'=>'required',
 											'placeholder' => "Nombre",
 											'value' => set_value('nombre')]); ?>
-        	    </div>
+        	    <?php echo form_error('nombre', '<div class="bg-danger">', '</div>'); ?>
+                </div>
+
         	    <div class="col-md-6">
 					<?php echo form_input (['name' => "apellido",
 											'id' => "apellido",
@@ -27,7 +28,8 @@
                                             'required'=>'required',
 											'placeholder' => "Apellido",
 											'value' => set_value('apellido')]); ?>
-        	    </div>
+        	    <?php echo form_error('apellido', '<div class="bg-danger">', '</div>'); ?>
+                </div>
         	</div>
 
         	<div class="form-group row">
@@ -39,7 +41,8 @@
 											'required'=>'required',
 											'placeholder' => "Email",
 											'value' => set_value('correo')]); ?>
-        	    </div>
+        	    <?php echo form_error('correo', '<div class="bg-danger">', '</div>'); ?>
+                </div>
         	</div>
 
 			<div class="form-group row">
@@ -51,7 +54,8 @@
 											'required'=>'required',
 											'placeholder' => "Tema",
 											'value' => set_value('tema')]); ?>
-        	    </div>
+        	    <?php echo form_error('tema', '<div class="bg-danger">', '</div>'); ?>
+                </div>
         	</div>
 		
         	<div class="form-group row">
@@ -64,7 +68,8 @@
 											'required'=>'required',
 											'placeholder' => "Escriba su mensaje aquí.",
 											'value' => set_value('consulta')]); ?>
-        	    </div>
+        	    <?php echo form_error('consulta', '<div class="bg-danger">', '</div>'); ?>
+                </div>
         	</div>
 
         	<div class="form-group row">
@@ -80,10 +85,3 @@
 </div>
 </div>
 </div>
-
-<!-- Success message 
-<script>
-function submitt(){
-    alert("Tu mensaje fue enviado, en breve nos pondremos en contacto contigo.");
-}
-</script> -->

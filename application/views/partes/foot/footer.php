@@ -5,7 +5,7 @@
             <div class="row">
                 
                 <div class="col-md-4">
-                    <h3>About ELibrary</h3>
+                    <h3>Sobre ELibrary</h3>
                     <p>Somos un servicio de información profesional basado en prácticas y normas bibliotecológicas. Un equipo dedicado a encontrar y brindar la mejor solución de información para vos. Nos esforzamos para que, si sos estudiante, profesional, empleado o investigador, nuestro servicio cubra rápidamente tus expectativas.</p>
                 </div>
   
@@ -26,7 +26,7 @@
                     <form action="#" class="footer-subscribe">
                         <div class="d-flex mb-5">
                             <input type="text" class="form-control rounded-0" placeholder="Email">
-                            <input type="submit" class="btn btn-primary rounded-0" value="Subscribe">
+                            <input type="submit" class="btn btn-primary rounded-0" value="Suscríbete">
                         </div>
                     </form>
                 </div>

@@ -25,7 +25,13 @@ class Welcome extends CI_Controller {
     
 	public function index()
 	{
-		$data['titulo']='Home';
+        if ($this->session->userdata('logged_in')) {
+            $session_data = $this->session->userdata('logged_in');
+	        $data['id'] = $session_data['id'];
+	        $data['perfil'] = $session_data['perfil'];
+			$data['nombre'] = $session_data['nombre'];
+        }
+		$data['titulo']='Elibrary - Home';
 
 		$this->load->view('partes/head/header', $data);
 		$this->load->view('partes/nav/navbar');
@@ -34,15 +40,14 @@ class Welcome extends CI_Controller {
 		$this->load->view('partes/contenido/program-section');
 		$this->load->view('partes/contenido/event-section');
 		$this->load->view('partes/contenido/why-choose-section');
-		$this->load->view('partes/foot/footer');
+        $this->load->view('partes/foot/footer');
     }
     
     public function consultas()
 	{
         $this->load->model('consulta_model');
         $data['consultas'] = $this->consulta_model->get_consultas();
-        
-		$data['titulo']='Consultas';
+        $data['titulo']='Elibrary - Consultas';
 
 		$this->load->view('partes/head/header', $data);
 		$this->load->view('partes/nav/navbar-consulta');
@@ -51,4 +56,45 @@ class Welcome extends CI_Controller {
 		$this->load->view('partes/foot/footer-consulta');
     }
 
+    public function fracaso_validacion(){
+        $data['titulo']='Fallo Verificacion';
+
+		$this->load->view('partes/head/header', $data);
+        $this->load->view('partes/contenido/fracaso-validacion');
+		$this->load->view('partes/nav/navbar');
+		$this->load->view('partes/contenido/home-section', $data);
+		$this->load->view('partes/contenido/service-section');
+		$this->load->view('partes/contenido/program-section');
+		$this->load->view('partes/contenido/event-section');
+		$this->load->view('partes/contenido/why-choose-section');
+		$this->load->view('partes/foot/footer');
+    }
+
+    public function exito_consulta(){
+        $data['titulo']='Exito Verificacion';
+        
+		$this->load->view('partes/head/header', $data);
+        $this->load->view('partes/contenido/exito-consulta');
+		$this->load->view('partes/nav/navbar');
+		$this->load->view('partes/contenido/home-section', $data);
+		$this->load->view('partes/contenido/service-section');
+		$this->load->view('partes/contenido/program-section');
+		$this->load->view('partes/contenido/event-section');
+		$this->load->view('partes/contenido/why-choose-section');
+		$this->load->view('partes/foot/footer');
+    }
+
+    public function exito_registro(){
+        $data['titulo']='Exito Verificacion';
+        
+		$this->load->view('partes/head/header', $data);
+        $this->load->view('partes/contenido/exito-registro');
+		$this->load->view('partes/nav/navbar');
+		$this->load->view('partes/contenido/home-section', $data);
+		$this->load->view('partes/contenido/service-section');
+		$this->load->view('partes/contenido/program-section');
+		$this->load->view('partes/contenido/event-section');
+		$this->load->view('partes/contenido/why-choose-section');
+		$this->load->view('partes/foot/footer');
+    }
 }

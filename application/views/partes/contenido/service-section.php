@@ -1,4 +1,4 @@
-<div class="site-section services-title" id="services-section">
+<div class="site-section courses-title" id="services-section">
 <div class="container">
 <div class="row mb-5 justify-content-center">
 <div class="col-lg-7 text-center" data-aos="fade-up" data-aos-delay="100">
@@ -16,7 +16,7 @@
 
         <div class="course bg-white h-100 align-self-stretch">
             <figure class="m-0">
-                <a href="course-single.html"><img src="images/libro9.jpg" alt="Image" class="img-fluid"></a>
+                <a href="course-single.html"><img src="<?php echo base_url(); ?>/images/libro9.jpg" alt="Image" class="img-fluid"></a>
             </figure>
             <div class="course-inner-text py-4 px-4">
                 <h3><a href="#">Catalogo</a></h3>
@@ -29,7 +29,7 @@
 
         <div class="course bg-white h-100 align-self-stretch">
             <figure class="m-0">
-                <a href="course-single.html"><img src="images/leyendo.jpg" alt="Image" class="img-fluid"></a>
+                <a href="course-single.html"><img src="<?php echo base_url(); ?>/images/leyendo.jpg" alt="Image" class="img-fluid"></a>
             </figure>
             <div class="course-inner-text py-4 px-4">
                 <h3><a href="#">Consejos de Estudio</a></h3>
@@ -42,7 +42,7 @@
 
         <div class="course bg-white h-100 align-self-stretch">
             <figure class="m-0">
-                <a href="course-single.html"><img src="images/libro4.jpg" alt="Image" class="img-fluid"></a>
+                <a href="course-single.html"><img src="<?php echo base_url(); ?>/images/libro4.jpg" alt="Image" class="img-fluid"></a>
             </figure>
             <div class="course-inner-text py-4 px-4">
                 <h3><a href="#">Tesis y Disertaciones</a></h3>
@@ -55,7 +55,7 @@
 
         <div class="course bg-white h-100 align-self-stretch">
             <figure class="m-0">
-                <a href="course-single.html"><img src="images/delivery.jpg" alt="Image" class="img-fluid"></a>
+                <a href="course-single.html"><img src="<?php echo base_url(); ?>/images/delivery.jpg" alt="Image" class="img-fluid"></a>
             </figure>
             <div class="course-inner-text py-4 px-4">
                 <h3><a href="#">Delivery</a></h3>
@@ -68,7 +68,7 @@
 
         <div class="course bg-white h-100 align-self-stretch">
             <figure class="m-0">
-                <a href="course-single.html"><img src="images/libro6.jpg" alt="Image" class="img-fluid"></a>
+                <a href="course-single.html"><img src="<?php echo base_url(); ?>/images/libro6.jpg" alt="Image" class="img-fluid"></a>
             </figure>
             <div class="course-inner-text py-4 px-4">
                 <h3><a href="#">Dona un Libro</a></h3>

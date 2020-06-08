@@ -6,6 +6,9 @@ class Consulta_model extends CI_Model
 		parent::__construct();
 	}
 
+    /**
+	 * Agregar contenido a la BD
+	 */
 	function add_consulta($data)
 	{
 		$this->db->insert('consultas', $data);

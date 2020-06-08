@@ -37,7 +37,7 @@
                             </div>
 
                             <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                                <div class="card-body">La Biblioteca ofrece servicios a la Comunidad de Corrientes, incluyendo: Magistrados, Funcionarios, Profesionales y Público en general para el uso de su colección e instalaciones.</div>
+                                <div class="card-body">La Biblioteca ofrece servicios a la Comunidad de Corrientes, incluyendo Profesionales y Público en general para el uso de su colección e instalaciones.</div>
                             </div>
                         </div>
                         <div class="card">

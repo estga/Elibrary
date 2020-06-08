@@ -1,8 +1,8 @@
-<div class="site-section bg-image overlay" style="background-image: url('images/biblioteca12.jpg');">
+<div class="site-section bg-image overlay" style="background-image: url('<?php echo base_url(); ?>/images/biblioteca12.jpg');">
 <div class="container">
     <div class="row justify-content-center align-items-center">
     <div class="col-md-8 text-center testimony" data-aos="fade-up" data-aos-delay="500">
-        <img src="images/person_2.jpg" alt="Image" class="img-fluid w-25 mb-4 rounded-circle">
+        <img src="<?php echo base_url(); ?>/images/person_2.jpg" alt="Image" class="img-fluid w-25 mb-4 rounded-circle">
         <h3 class="mb-4">Mariana Corrales - Estudiante Universitaria</h3>
         <blockquote>
             <p>&ldquo;Vengo siempre a la Biblioteca, es como un refugio para mí. A veces a estudiar o a veces a buscar información, pero siempre me voy complacida con la atención y el servicio que realmente es excelente&rdquo;</p>
@@ -16,10 +16,10 @@
 
     <div class="future-blobs">
         <div class="blob_2">
-            <img src="images/blob_2.svg" alt="Image">
+            <img src="<?php echo base_url(); ?>/images/blob_2.svg" alt="Image">
         </div>
         <div class="blob_1">
-            <img src="images/blob_1.svg" alt="Image">
+            <img src="<?php echo base_url(); ?>/images/blob_1.svg" alt="Image">
         </div>
     </div>
         
@@ -60,7 +60,7 @@
             </div>
 
             <div class="col-lg-7 align-self-end"  data-aos="fade-left" data-aos-delay="200">
-                <img src="images/person_transparent.png" alt="Image" class="img-fluid">
+                <img src="<?php echo base_url(); ?>/images/person_transparent.png" alt="Image" class="img-fluid">
             </div>
 
         </div>
