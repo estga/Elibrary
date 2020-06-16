@@ -25,16 +25,10 @@ class Welcome extends CI_Controller {
     
 	public function index()
 	{
-        if ($this->session->userdata('logged_in')) {
-            $session_data = $this->session->userdata('logged_in');
-	        $data['id'] = $session_data['id'];
-	        $data['perfil'] = $session_data['perfil'];
-			$data['nombre'] = $session_data['nombre'];
-        }
-		$data['titulo']='Elibrary - Home';
+        $data['titulo']='Elibrary - Home';
 
-		$this->load->view('partes/head/header', $data);
-		$this->load->view('partes/nav/navbar');
+        $this->load->view('partes/head/header', $data);
+		$this->load->view('partes/nav/navbar', $data);
 		$this->load->view('partes/contenido/home-section');
 		$this->load->view('partes/contenido/service-section');
 		$this->load->view('partes/contenido/program-section');
@@ -60,7 +54,7 @@ class Welcome extends CI_Controller {
         $data['titulo']='Fallo Verificacion';
 
 		$this->load->view('partes/head/header', $data);
-        $this->load->view('partes/contenido/fracaso-validacion');
+        $this->load->view('partes/contenido/falla-validacion');
 		$this->load->view('partes/nav/navbar');
 		$this->load->view('partes/contenido/home-section', $data);
 		$this->load->view('partes/contenido/service-section');
@@ -95,6 +89,43 @@ class Welcome extends CI_Controller {
 		$this->load->view('partes/contenido/program-section');
 		$this->load->view('partes/contenido/event-section');
 		$this->load->view('partes/contenido/why-choose-section');
+		$this->load->view('partes/foot/footer');
+    }
+
+    public function bienvenida_logeo(){
+        $data['titulo']='Bienvenido';
+        
+		$this->load->view('partes/head/header', $data);
+        $this->load->view('partes/contenido/bienvenida-logeo', $data);
+		$this->load->view('partes/nav/navbar');
+		$this->load->view('partes/contenido/home-section', $data);
+		$this->load->view('partes/contenido/service-section');
+		$this->load->view('partes/contenido/program-section');
+		$this->load->view('partes/contenido/event-section');
+		$this->load->view('partes/contenido/why-choose-section');
+		$this->load->view('partes/foot/footer');
+    }
+
+    public function falla_logeo(){
+        $data['titulo']='Falla logeo';
+        
+		$this->load->view('partes/head/header', $data);
+        $this->load->view('partes/contenido/falla-logeo');
+		$this->load->view('partes/nav/navbar');
+		$this->load->view('partes/contenido/home-section', $data);
+		$this->load->view('partes/contenido/service-section');
+		$this->load->view('partes/contenido/program-section');
+		$this->load->view('partes/contenido/event-section');
+		$this->load->view('partes/contenido/why-choose-section');
+		$this->load->view('partes/foot/footer');
+    }
+
+    public function perfil(){
+        $data['titulo']='Perfil';
+        
+		$this->load->view('partes/head/header', $data);
+		$this->load->view('partes/nav/navbar-consulta');
+        $this->load->view('partes/contenido/perfil-view');
 		$this->load->view('partes/foot/footer');
     }
 }

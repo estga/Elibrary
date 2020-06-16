@@ -7,8 +7,7 @@
 
     <div class="col-lg-6">
         <h1 data-aos="fade-up" data-aos-delay="100">Déjanos tu consulta!</h1>
-        <!-- Buscar la forma de mostrar numero de comentarios realizado -->
-        <p data-aos="fade-up" data-aos-delay="200"><a href="#CommentSeccion" class="text-white">6 comentarios</a></p>
+        <p data-aos="fade-up" data-aos-delay="200"><a href="#CommentSeccion" class="text-white"><?php echo count($consultas); ?> Comentarios</a></p>
     </div>
 
 </div>
@@ -127,21 +126,21 @@
 
                 <div class="pt-5" id="CommentSeccion">
                     <br>
-                    <h3 class="mb-5">6 Comentarios</h3>
+                    <h3 class="mb-5"><?php echo count($consultas); ?> Comentarios</h3>
                     <ul class="comment-list">
 
                         <?php foreach($consultas as $fila) { ?>
-                        <li class="comment">
-                            <div class="vcard bio">
-                                <img src="<?php echo base_url(); ?>/images/unnamed.png" alt="Image placeholder">
-                            </div>
-                            <div class="comment-body">
-                                <h3><?php echo $fila->nombre; ?> <?php echo $fila->apellido; ?></h3>
-                                <div class="meta"><?php echo date("d/m/Y", strtotime($fila->fecha)); ?></div>
-                                <h5><?php echo $fila->tema; ?></h5>
-                                <p><?php echo $fila->consulta; ?></p>
-                            </div>
-                        </li>
+                            <li class="comment">
+                                <div class="vcard bio">
+                                    <img src="<?php echo base_url(); ?>/images/unnamed.png" alt="Image placeholder">
+                                </div>
+                                <div class="comment-body">
+                                    <h3><?php echo $fila->nombre; ?> <?php echo $fila->apellido; ?></h3>
+                                    <div class="meta"><?php echo date("d/m/Y", strtotime($fila->fecha)); ?></div>
+                                    <h5><?php echo $fila->tema; ?></h5>
+                                    <p><?php echo $fila->consulta; ?></p>
+                                </div>
+                            </li>
                         <?php } ?>
 
                     </ul>

@@ -16,33 +16,28 @@ class User_model extends CI_Model
     
     /**
      * Verifica si existe usuario con ese correo y contraseña
-     * si existe lo devuelve
+     * y lo devuelve
      */
-    function valid_user($correo, $pass)
+    function get_user($correo, $pass)
     {
-        //version larga
+        $this->db->select('*');
+        $this->db->from('usuarios');
         $this->db->where('correo', $correo);
         $this->db->where('pass', $pass);
-        $query = $this->db->get('usuarios');
-        //version corta
-        //$query = $this->db>get_where('users',array('username'=>$username,'password'=>$password));
-        if(($query->num_rows() == 1) AND ($query->row()->estado == 1)){
-            return $query->result();
-        }else{
-            return FALSE;
-        }
+        $query = $this->db->get();
+        $resultado = $query->row();
+        return $resultado;
     }
 
     /**
-     * Verifica si existe usuario con ese correo
+     * Trae todos los usuarios de la DB
      */
-    function valid_user_ajax($correo)
+    function get_users()
     {
-        $this->db->where('correo', $correo);
-        $query = $this->db->get('usuarios');
-        if($query->num_rows() >0){
-            echo $query->num_rows();
-        }
+        $this->db->select('*');
+        $this->db->from('usuarios');
+        $query = $this->db->get();
+        return $query->result();
     }
 
 }

@@ -14,6 +14,9 @@ class Consulta_model extends CI_Model
 		$this->db->insert('consultas', $data);
 	}
 
+    /**
+     * Trae todas las consultas de la DB
+     */
 	public function get_consultas()
 	{
     	$this->db->select('*');

@@ -55,55 +55,53 @@ class User_controller extends CI_Controller
      * Validacion de atributos cargados en el formulario de inicio de sesion
      */
     function iniciar_sesion_validacion()
-    {
-        $this->form_validation->set_rules('correo', 'Usuario', 'required');
-        $this->form_validation->set_rules('password', 'Contraseña', 'required');
+    {   
+        //Reglas de validación
+        $this->form_validation->set_rules('correo', 'Usuario', 'trim|required');
+        $this->form_validation->set_rules('password', 'Contraseña', 'trim|required|callback__valid_login');
 
+        //Mensajes en caso de error
         $this->form_validation->set_message('required', 'El campo %s es obligatorio');
+        $this->form_validation->set_message('_valid_login', 'El usuario o contraseña son incorrectos');
+
+        //Forma en que muestra los mensajes de error
+		$this->form_validation->set_error_delimiters('<ul><li>', '</li></ul>');
 
         if ($this->form_validation->run() == FALSE){
-            redirect('welcome');
-        }else{
-            $this->usuario_logueado();
+            redirect('welcome/falla_logeo');
+        } else {
+            redirect('welcome/bienvenida_logeo');
         }
-    }
-
-    /**
-     * Verifica que el usuario no este ya logeado antes de logear
-     */
-    function usuario_logeado()
-    {
-        if ($this->session->userdata('login')){
-            # code...
-        }else{
-            # code...
-        }
-        
     }
 
     /**
      * Verifico si existe el usuario en la BD
      */
-    function _valid_login($password)
+    function _valid_login()
     {
+        $password = $this->input->post('password');
         $correo = $this->input->post('correo');
         //Verifico si el usuario y la contraseñas pasados existen en la base de datos
-        return $this->user_model->valid_user($correo,$password);
-    }
-    
-    /**
-     * Creo una instancia "sesion"
-     */
-    function sesion($password)
-    {
-        $usuario = _valid_login($password);
-        if ($usuario){
-            $sesion_usuario = array();
-            # code...
-        } else {
-            # code...
+        $usuario = $this->user_model->get_user($correo,$password);
+
+        if ($usuario){ //Si el resultado es correcto lo asigna a la variable session
+            $sess_array = array('id_usuario' => $usuario->id_usuario,
+                                'nombre' => $usuario->nombre,
+                                'apellido' => $usuario->apellido,
+                                'correo' => $usuario->correo,
+                                'pass' => $usuario->pass,
+                                'direccion' => $usuario->direccion,
+                                'telefono' => $usuario->telefono,
+                                'estado' => $usuario->estado,
+                                'tipo' => $usuario->tipo,
+                                'fecha' => $usuario->fecha,
+                                'logged_in' => true);
+            $this->session->set_userdata($sess_array);
+            return true;
+        }else{
+            $this->form_validation->set_message('verificar_password','Usuario o contraseña invalido');
+            return false;
         }
-        
     }
 
     /**
@@ -115,5 +113,37 @@ class User_controller extends CI_Controller
         $this->session->sess_destroy();
         //direcciono a la página principal
         redirect(base_url());
-    } 
+    }
+
+    function perfil($id_usuario)
+    {
+		$data = array('titulo' => 'Perfil');
+		
+		$session_data = $this->session->userdata('logged_in');
+		$data['id_usuario'] = $session_data['id_usuario'];
+		$data['tipo'] = $session_data['tipo'];
+		$data['nombre'] = $session_data['nombre'];
+
+		$dat = array('user' => $this->usuario_model->get_by_id($id));
+
+		$this->load->view('partes/head/header', $data);
+		$this->load->view('partes/nav/navbar-consulta', $data);
+		$this->load->view('back/muestraperfil_view', $dat);
+		$this->load->view('partes/foot/footer-consulta');
+    }
+
+    /**
+     * Lista todos los usuarios cargados en la DB
+     */
+    public function listar_usuarios()
+	{
+		$data['usuarios'] = $this->user_model->get_users();
+	    $data['title'] = 'Lista de Usuarios';
+
+		$this->load->view('partes/head/header', $data);
+	    $this->load->view('partes/nav/navbar-consulta');
+	    $this->load->view('partes/contenido/usuarios-view', $data);
+	    $this->load->view('partes/foot/footer-consulta');
+    }
+    
 }
