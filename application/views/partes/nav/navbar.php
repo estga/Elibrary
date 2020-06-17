@@ -51,8 +51,8 @@
                     <div class="dropdown-divider"></div>
                     <?php if(($this->session->userdata('logged_in')) and ($this->session->userdata('tipo') == '1')) { ?>
 		                <a class="text-white p-3 mb-2" href="<?php echo base_url('user_controller/listar_usuarios');?>">Gestionar Socios</a>
+                        <div class="dropdown-divider"></div>
                     <?php } ?>
-                    <div class="dropdown-divider"></div>
 		            <a class="text-white p-3 mb-2" href="<?php echo base_url('user_controller/logout');?>">Salir</a>
 	            </div>
             </div>
