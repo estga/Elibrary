@@ -30,28 +30,36 @@
                     </div>
                     <div class="panel-body lead">
                         <div class="row">
-                            <div class="col-sm-4">
+                            <!-- <div class="col-sm-4">
                                 <img alt="User Pic" src="<?php echo base_url('/uploads/carteles/') . $fila->cartel; ?>" class="img-circle img-responsive">
-                            </div>
+                            </div> -->
                             <div class="col-sm-8">
                                 <div class="table-responsive">
                                     <table class="table">
                                         <tbody>
                                             <tr>
                                                 <td>Usuario:</td>
-                                                <td><?php echo $this->session->userdata('user'); ?></td>
+                                                <td><?php echo $this->session->userdata('nombre') . ' ' . $this->session->userdata('apellido'); ?></td>
                                             </tr>
                                             <tr>
                                                 <td>Dirección:</td>
                                                 <td><?php echo $this->session->userdata('direccion'); ?></td>
                                             </tr>
                                             <tr>
-                                                <td>Teléfono</td>
+                                                <td>Teléfono:</td>
                                                 <td><?php echo $this->session->userdata('telefono'); ?></td>
                                             </tr>
                                             <tr>
-                                                <td>Email</td>
-                                                <td><a href="mailto:<?php echo $this->session->userdata('email'); ?>"><?php echo $this->session->userdata('email'); ?></a></td>
+                                                <td>Correo:</td>
+                                                <td><a href="mailto:<?php echo $this->session->userdata('correo'); ?>"><?php echo $this->session->userdata('correo'); ?></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Contraseña:</td>
+                                                <td><?php echo $this->session->userdata('pass'); ?></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Socio desde:</td>
+                                                <td><?php echo date("d/m/Y", strtotime($this->session->userdata('fecha'))); ?></td>
                                             </tr>
                                             <tr>
                                                 <td></td>

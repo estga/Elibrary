@@ -26,7 +26,7 @@ class Consulta_controller extends CI_controller
 		if ($this->form_validation->run() == FALSE) { //Si no pasa la validacion de datos
 			// redirecciona la página de consultas con el título de error
 			$data['titulo']='Fallo Verificacion';
-			redirect ('welcome/consultas');
+			redirect ('welcome/fracaso_validacion');
 		}else{ //Pasa la validacion
 			$this->nueva_consulta();
 		}
@@ -50,7 +50,7 @@ class Consulta_controller extends CI_controller
 			
 		//Redirecciono a la pagina de principal
 		$data['titulo']='Exito Consulta';
-		redirect ('welcome/consultas');
+		redirect ('welcome/exito_consulta');
 	}
 
 	public function listar_consultas()
